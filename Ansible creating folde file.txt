@@ -1,0 +1,21 @@
+creates Folder
+
+---
+-
+  become: true
+  hosts: all
+  tasks:
+    - 
+     name: Creates directory
+     file: path=/src/www state=directory
+
+-------creates file---------------
+
+---
+-	 
+  become: true
+  hosts: all
+  tasks:
+    -
+     name: Creates file
+     file: path=/tmp/jayaram/ansible.txt state=touch
